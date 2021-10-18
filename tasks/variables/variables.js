@@ -48,21 +48,12 @@ let human = {
 /**
  * TODO set new key of human object named lastName and value "Dou"
  */
-human = {
-  firstName: 'John',
-  lastName: 'Dou'
-};
+human.lastName = 'Dou';
 
 /**
  * TODO set new key of human object named fullName and value of concatenation of firstName and lastName values
  */
-let firstName = 'John';
-let lastName = 'Dou';
-human = {
-  firstName: firstName,
-  lastName: lastName,
-  fullName: firstName + ' ' + lastName
-};
+human.fullName = human.firstName + ' ' + human.lastName;
 
 module.exports = {
   int,
