@@ -21,9 +21,7 @@ function sum(a, b) {
  * }
  */
 function getFullName(object) {
-	let name = object.firstName + ' ' + object.lastName;
-	console.log(name);
-	return name;
+	return object.firstName + ' ' + object.lastName;
 }
 
 /**
@@ -40,12 +38,13 @@ function isOdd(n) {
  * console.log(getShortest(["one", "two", "three"])) // one
  */
 function getShortest(wordArray) {
+	let shortest = wordArray[0];
 	for (let i = 0; i < wordArray.length; i++) {
-		if (wordArray[i].length < wordArray[0].length) {
-			return wordArray[i];
+		if (wordArray[i].length < shortest.length) {
+			shortest = wordArray[i];
 		}
 	}
-	return wordArray[0];
+	return shortest;
 }
 
 /**
@@ -73,12 +72,11 @@ function getGoogle(n) {
  * }
  */
 function getUser(firstName = null, lastName = null, age = null) {
-	let object = {
+	return {
 		firstName: firstName,
 		lastName: lastName,
 		age: age
 	};
-	return object;
 }
 
 /**
@@ -88,8 +86,8 @@ function getUser(firstName = null, lastName = null, age = null) {
  */
 function getTotalPath(path) {
 	let distance = 0;
-	for (let i = 0; i < path.length; i++) {
-		distance += path[i].distance
+	for (let direction of path) {
+		distance += direction.distance
 	}
 	return distance;
 }
@@ -124,14 +122,13 @@ const myObject = {
 	age: 25,
 	friends: ['Mike', 'Alan', 'Daniel'],
 	keys() {
-		for (let key in myObject) {
+		for (let key in this) {
 			console.log(key);
 		}
 	},
 	call() {
-		return 'My name is ' + myObject.name + ' ' + myObject.lastName + ' and I am 25 years old. My best friend is ' + this.friends[2];
+		return 'My name is ' + this.name + ' ' + this.lastName + ' and I am 25 years old. My best friend is ' + this.friends[2];
 	}
-
 };
 
 module.exports = {
