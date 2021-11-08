@@ -9,7 +9,10 @@
  * console.log(reverseString(123)) // 'This is not a string!'
  */
 function reverseString(str) {
-
+  if (typeof str == 'number') {
+    return 'This is not a string!';
+  }
+  return str.split("").reverse().join("");
 }
 
 /**
@@ -23,7 +26,12 @@ function reverseString(str) {
  * hint: please choose and appropriate method from the Math object
  */
 function centuryFromYear(year) {
-
+  let century = Math.floor(year / 100);
+  if (year % 100 === 0) {
+    return century;
+  } else {
+    return century + 1;
+  }
 }
 
 /**
@@ -38,7 +46,13 @@ function centuryFromYear(year) {
  * hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
  */
 function strCount(str, char) {
-
+  let regExp = new RegExp(char, 'g');
+  let occurences = str.match(regExp);
+  if (occurences === null) {
+    return 0;
+  } else {
+    return occurences.length;
+  }
 }
 
 /**
@@ -53,7 +67,11 @@ function strCount(str, char) {
  * console.log(truncateString('This', 6)) // 'This'
  */
 function truncateString(str, num) {
-
+  if (str.length <= num) {
+    return str;
+  } else {
+    return str.slice(0, num) + '...';
+  }
 }
 
 /**
@@ -65,7 +83,7 @@ function truncateString(str, num) {
  * hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
  */
 function replace10(text) {
-
+  return text.replace(/10/g, 'ten');
 }
 
 /**
@@ -76,7 +94,7 @@ function replace10(text) {
  * console.log(replaceConfidential("lorem [ipsum] si dolor")) // lorem [CONFIDENTIAL] si dolor
  */
 function replaceConfidential(text) {
-
+  return text.replace(/\[(.*?)\]/g, '[CONFIDENTIAL]');
 }
 
 module.exports = {
