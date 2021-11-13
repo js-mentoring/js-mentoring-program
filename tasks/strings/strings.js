@@ -9,10 +9,11 @@
  * console.log(reverseString(123)) // 'This is not a string!'
  */
 function reverseString(str) {
-  if (typeof str == 'number') {
+  if (typeof str === 'string') {
+    return str.split("").reverse().join("");
+  } else {
     return 'This is not a string!';
   }
-  return str.split("").reverse().join("");
 }
 
 /**

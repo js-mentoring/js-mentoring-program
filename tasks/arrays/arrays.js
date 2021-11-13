@@ -33,7 +33,7 @@ function getNonHumanCharacters(chars) {
  * @return {Object} - Jerry object
  */
 function getJerryInfo(chars) {
-	return chars.filter(el => el.name === 'Jerry Smith')[0];
+	return chars.find(el => el.name === 'Jerry Smith');
 }
 
 /**
@@ -43,8 +43,7 @@ function getJerryInfo(chars) {
  * @return {boolean}
  */
 function isAllHuman(chars) {
-	let notHumanCount = chars.filter(el => el.species !== 'Human').length;
-	return notHumanCount !== 0 ? false : true;
+	return chars.every(el => el.species === 'Human');
 }
 
 /**
