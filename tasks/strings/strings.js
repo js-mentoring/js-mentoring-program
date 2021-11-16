@@ -27,12 +27,7 @@ function reverseString(str) {
  * hint: please choose and appropriate method from the Math object
  */
 function centuryFromYear(year) {
-  let century = Math.floor(year / 100);
-  if (year % 100 === 0) {
-    return century;
-  } else {
-    return century + 1;
-  }
+  return Math.ceil(year / 100);
 }
 
 /**
