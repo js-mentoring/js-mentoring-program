@@ -18,11 +18,11 @@ var str = "John";
 /**
  * TODO create variable named str2 and set value equal str plus " Dou"
  */
-var str2 = str + "Dou";
+var str2 = str + " Dou";
 /**
  * TODO create variable named bool and set value of equality comparison of int and int2 variables
  */
-var bool = int2 > int;
+var bool = int2 == int;
 /**
  * TODO create variable named arr and set value array of numbers from 1 to 5
  */
@@ -35,7 +35,7 @@ var fifth = arr[4];
  * TODO create variable named human and set value as object with key firstName and value "John"
  */
 var human = {
-  "firstname": "John"
+  "firstName": "John"
 };
 /**
  * TODO set new key of human object named lastName and value "Dou"
@@ -44,7 +44,7 @@ human.lastName = "Dou";
 /**
  * TODO set new key of human object named fullName and value of concatenation of firstName and lastName values
  */
-human.fullName = human.firstname + ' ' + human.lastName;
+human.fullName = human.firstName + ' ' + human.lastName;
 module.exports = {
   int,
   int2,
