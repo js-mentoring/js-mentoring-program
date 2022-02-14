@@ -1,56 +1,76 @@
 /**
- * Materials: 
+ * Materials:
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
  */
 
 /**
  * TODO create variable named int and set value equal to 1
  */
-
-
-/**
- *  TODO create variable named int2 and set value equal int plus 1
- */
-
-/**
- * TODO create variable named str and set value equal to "John"
- */
-
-/**
- * TODO create variable named str2 and set value equal str plus " Dou"
- */
-
-/**
- * TODO create variable named bool and set value of equality comparison of int and int2 variables
- */
-
-/**
- * TODO create variable named arr and set value array of numbers from 1 to 5
- */
-
-/**
- * TODO create variable named fifth and set value as element of array with index 4
- */
-
-/**
- * TODO create variable named human and set value as object with key firstName and value "John"
- */
-
-/**
- * TODO set new key of human object named lastName and value "Dou"
- */
-
-/**
- * TODO set new key of human object named fullName and value of concatenation of firstName and lastName values
- */
-
-module.exports = {
-  int,
-  int2,
-  str,
-  str2,
-  bool,
-  arr,
-  fifth,
-  human
-};
+ let int = 1;
+ console.log(int);
+ /**
+  *  TODO create variable named int2 and set value equal int plus 1
+  */
+ 
+ let int2 = int + 1;
+ console.log(int2);
+ /**
+  * TODO create variable named str and set value equal to "John"
+  */
+ let str = "John";
+ console.log(str);
+ /**
+  * TODO create variable named str2 and set value equal str plus " Doe"
+  */
+ 
+ let str2 = str + " Dou";
+ console.log(str2);
+ /**
+  * TODO create variable named bool and set value of equality comparison of int and int2 variables
+  */
+ 
+ let bool = int == int2;
+ console.log(bool);
+ 
+ /**
+  * TODO create variable named arr and set value array of numbers from 1 to 5
+  */
+ let arr = [1, 2, 3, 4, 5];
+ console.log(arr);
+ 
+ /**
+  * TODO create variable named fifth and set value as element of array with index 4
+  */
+ let fifth = arr[4];
+ console.log(arr[4]);
+ /**
+  * TODO create variable named human and set value as object with key firstName and value "John"
+  */
+ let human = { firstName: "John" };
+ console.log(human.firstName);
+ 
+ /**
+  * TODO set new key of human object named lastName and value "Dou"
+  */
+ 
+ human.lastName = "Dou";
+ console.log(human);
+ 
+ /**
+  * TODO set new key of human object named fullName and value of concatenation of firstName and lastName values
+  */
+ 
+ human.fullName = human.firstName + " " + human.lastName;
+ console.log(human.fullName);
+ 
+ module.exports = {
+   int,
+   int2,
+   str,
+   str2,
+   bool,
+   arr,
+   fifth,
+   human,
+ };
+ 
