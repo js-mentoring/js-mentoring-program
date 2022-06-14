@@ -20,6 +20,9 @@
     "type": "git",
     "url": "https://git.epam.com/Dzmitry_Shaplyka/js-mentoring-program.git"
   },
+  "mentees":[
+    "Darya Makeichik"
+  ],
   "authors": [
     "Dzmitry_Shaplyka@epam.com",
     "Oleksandr_Halichenko@epam.com"
