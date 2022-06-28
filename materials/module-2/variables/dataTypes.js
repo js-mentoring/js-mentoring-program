@@ -14,12 +14,16 @@ let sym = Symbol();
 const first = 'Hello';
 const second = 'World';
 const result = first + " " + second;
+console.log(result);
+
 
 /**
  * Number
  */
 const numFirst = 1500;
 const numSecond = 0b11;
+console.log(numFirst);
+console.log(numSecond);
 
 /**
  * Boolean
