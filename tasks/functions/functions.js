@@ -169,7 +169,7 @@ const myObject = {
 	keys(){
 		
 			for(let key in myObject){
-				console.log(myObject[key]);
+				console.log(key);
 			}
 			
 		
@@ -181,7 +181,7 @@ const myObject = {
 	}
 
 };
-console.log(myObject.keys());
+myObject.keys();
 console.log(myObject.call());
 
 module.exports = {
