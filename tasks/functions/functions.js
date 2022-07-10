@@ -168,19 +168,21 @@ const myObject = {
 	friends: ['Mike', 'Alan', 'Daniel'],
 	keys(){
 		
-			for (let key in myObject){
-           console.log(myObject[key]);
+			for(let key in myObject){
+				console.log(myObject[key]);
 			}
+			
 		
 	},
 	call() {
-		console.log('My name is',this.name, this.lastName,
-		'and I am',this.age,'years old. My best friend is',this.friends[2]);
+		return ('My name is '
+		+this.name+' '+ this.lastName+
+		' and I am ' +this.age+' years old. My best friend is '+this.friends[2]);
 	}
 
 };
 myObject.keys();
-myObject.call();
+console.log(myObject.call());
 
 module.exports = {
 	sum,
