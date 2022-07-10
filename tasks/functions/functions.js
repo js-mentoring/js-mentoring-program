@@ -69,7 +69,7 @@ function getShortest(wordArray) {
 	}
 	return shortestWord;
 }
-	console.log(getShortest(["one", "two", "three"]));
+	//console.log(getShortest(["one", "two", "three"]));
 	
 	
 
@@ -91,7 +91,7 @@ function getGoogle(n) {
 	return "g"+o+"gle";
 }
 
-console.log(getGoogle(7));
+//console.log(getGoogle(7));
 
 /**
  * write function that returns object based on the given information 
@@ -113,7 +113,7 @@ function getUser(firstName=null, lastName=null, age = null) {
 return person;
 
 }
-console.log(getUser());
+//console.log(getUser());
 
 /**
  * write function that calculates total path traveled.
@@ -121,8 +121,8 @@ console.log(getUser());
  * e.g [{direction: "Kiyv - Minsk", distance: 567}, {direction: "Kiyv - Paris", distance: 2402}]
  */
 
-const arr=[{direction: "Kiyv - Minsk", distance: 567}, 
-{direction: "Kiyv - Paris", distance: 2402}];
+//const arr=[{direction: "Kiyv - Minsk", distance: 567}, 
+//{direction: "Kiyv - Paris", distance: 2402}];
 
 function getTotalPath(path) {
 	let sum=0;
@@ -131,7 +131,7 @@ sum+=el.distance;
 }
 return sum;
 }
-console.log(getTotalPath(arr));
+//console.log(getTotalPath(arr));
 
 /**
  * write a function that will calculate a discount considering the Amount
@@ -151,9 +151,9 @@ function discountFunction(percentage) {
 		return amount-(percentage/100*amount);
 	};
 }
-const discount10 = discountFunction(10);
-console.log(discount10(90));
-console.log(discount10(100)); 
+//const discount10 = discountFunction(10);
+//console.log(discount10(90));
+//console.log(discount10(100)); 
 /**
  * Write the methods inside the given objects that:
  * 1. console logs keys of the given object (please use for..in cycle)
@@ -181,7 +181,7 @@ const myObject = {
 	}
 
 };
-myObject.keys();
+console.log(myObject.keys());
 console.log(myObject.call());
 
 module.exports = {
