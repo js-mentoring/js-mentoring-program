@@ -12,11 +12,11 @@
 function sum(a=0, b=0) {
 return a+b;
 }
-const result= sum(2,5);
-console.log(result);
+//const result= sum(2,5);
+//console.log(result);
 
 const sum1=(a,b)=>a+b;
-console.log(sum1(2,5));
+//console.log(sum1(2,5));
 
 
 /**
@@ -27,17 +27,17 @@ console.log(sum1(2,5));
  * }
  */
 
-const object={
+/*const object={
 	firstName: "Jenna",
 	lastName: "Luchynyn"
 
-}
+}*/
 function getFullName(object) {
 	return object.firstName+" "+object.lastName;
 
 }
 
-console.log(getFullName(object));
+//console.log(getFullName(object));
 
 
 /**
@@ -46,11 +46,11 @@ console.log(getFullName(object));
  */
 function isOdd(n) {
 	if(n%2==0){
-		return true;}
-	return false;
+		return false;}
+	return true;
 }
 
-console.log(isOdd(8));
+//console.log(isOdd(8));
 
 /**
  * write function that returns shortest of the words in the given array
@@ -104,7 +104,7 @@ console.log(getGoogle(7));
  *    age: 42
  * }
  */
-function getUser(firstName=null, lastName=null, age = 0) {
+function getUser(firstName=null, lastName=null, age = null) {
  const person={
 	firstName:firstName,
 	lastName:lastName,
@@ -166,13 +166,16 @@ const myObject = {
 	lastName: 'Doe',
 	age: 25,
 	friends: ['Mike', 'Alan', 'Daniel'],
-	keys:function() {
-		for(let key in myObject){
-			console.log(myObject[key]);
-		}
+	keys(){
+		
+			for (let key in myObject){
+           console.log(myObject[key]);
+			}
+		
 	},
-	call:function() {
-		console.log('My name is',this.name, this.lastName,'and I am',this.age,'years old. My best friend is',this.friends[2]);
+	call() {
+		console.log('My name is',this.name, this.lastName,
+		'and I am',this.age,'years old. My best friend is',this.friends[2]);
 	}
 
 };
