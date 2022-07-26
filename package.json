@@ -24,6 +24,10 @@
     "Dzmitry_Shaplyka@epam.com",
     "Oleksandr_Halichenko@epam.com"
   ],
+  "student": {
+    "name": "Vladimir",
+    "surname": "Kryvetski"
+  },
   "license": "EPAM Systems",
   "dependencies": {
     "chai": "^4.2.0",
